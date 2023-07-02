@@ -132,3 +132,11 @@ Il est possible de visualiser l'historique des commits sous forme graphique avec
 ```bash     
 git log --graph
 ```
+
+### Le fichier README.md
+
+C'est le premier fichier que vous lisez lorsque vous arrivez sur un dépôt Git. Celui-ci permet de décrire le projet et de donner des informations sur le projet. Il est écrit en Markdown. Il est important de le compléter pour que les utilisateurs puissent comprendre le projet. 
+
+Le site https://www.makeareadme.com/#suggestions-for-a-good-readme donne quelques conseils pour rédiger un bon README.md.
+
+La page [markdown.md](./markdown.md) contient quelques informations sur la syntaxe Markdown.
