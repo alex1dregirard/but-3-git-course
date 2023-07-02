@@ -24,27 +24,41 @@ Par exemple, pour connaitre l'aide de la commande `git add`, vous pouvez utilise
 git add --help
 ```
 
+L'aide de git est aussi disponible en ligne à l'adresse suivante : https://git-scm.com/docs
+
 Il est aussi possible d'avoir accès aux commandes avancées de Git en utilisant la commande suivante :
 ```bash 
 git help -a
 ```
+
+L'aide de Git sépare les commandes en plusieurs catégories :
+- Main Porcelain : ce sont ces commandes qui sont utilisées le plus souvent, elles permettent de réaliser des actions de haut niveau, telles que l'ajout de fichiers, la création de commits, la création de branches, etc.
+- Ancillary Commands : les commandes moins utilisées, mais qui sont utiles dans certaines situations
+
+## Configuration de Git
 
 Afin de vérifier la configuration de Git, vous pouvez utiliser la commande suivante :
 ```bash 
 git config --list
 ```
 
+Les configurations de Git sont stockées dans trois fichiers :
+- `/etc/gitconfig` : contient la configuration de Git pour tous les utilisateurs et tous les dépôts
+- `~/.gitconfig` : contient la configuration de Git pour un utilisateur et tous les dépôts
+- `.git/config` : contient la configuration de Git pour un utilisateur et un dépôt
+
+
 Il est possible de configurer Git en utilisant la commande suivante :
 ```bash
 git config --global <key> <value>
 ```
 
-Par exemple pour configurer le nom et l'adresse email de l'utilisateur, vous pouvez utiliser les commandes suivantes :
+Une des configurations les plus importantes est la configuration de     l'utilisateur. Il est nécessaire de configurer le nom et l'adresse email de l'utilisateur. Ces informations seront utilisées pour les commits. Cette configuration ce fait en utilisant les commandes suivantes :
+
 ```bash
 git config --global user.name "John Doe"
 git config --global user.email 
 ```
-
 ## Création d'un dépôt Git
 Pour tout nouveau projet, il est nécessaire de créer un dépôt Git. Pour cela, il faut utiliser la commande suivante :
 ```bash
@@ -95,12 +109,16 @@ Pour supprimer des fichiers, il faut utiliser la commande suivante :
 ```bash 
 git rm <file>
 ```
-
 ### Commiter des fichiers
 
 Pour commiter des fichiers, il faut utiliser la commande suivante :
 ```bash 
 git commit -m "Message du commit"
+```
+
+Le message du commit doit être explicite et doit décrire les modifications apportées par le commit. Il est possible de modifier le message du dernier commit en utilisant la commande suivante :
+```bash
+git commit --amend -m "Nouveau message du commit"
 ```
 
 ### Visualiser l'historique des commits
@@ -114,6 +132,3 @@ Il est possible de visualiser l'historique des commits sous forme graphique avec
 ```bash     
 git log --graph
 ```
-
-
-
