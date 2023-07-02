@@ -140,3 +140,12 @@ C'est le premier fichier que vous lisez lorsque vous arrivez sur un dépôt Git.
 Le site https://www.makeareadme.com/#suggestions-for-a-good-readme donne quelques conseils pour rédiger un bon README.md.
 
 La page [markdown.md](./markdown.md) contient quelques informations sur la syntaxe Markdown.
+
+### Le fichier .gitignore
+
+Le fichier `.gitignore` permet de spécifier les fichiers qui ne doivent pas être suivis par Git. Il est possible de spécifier des fichiers, des dossiers, des extensions de fichiers, etc.
+
+Le site https://www.gitignore.io/ permet de générer un fichier `.gitignore` en fonction du langage utilisé.
+Github propose aussi une liste de fichiers `.gitignore` pour différents langages.
+
+
